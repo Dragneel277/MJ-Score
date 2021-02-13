@@ -1,0 +1,114 @@
+
+body,html {
+margin: 0;
+}
+.top{
+    display: grid;
+    flex-flow: row nowrap;
+    position: relative;
+    background-color:gainsboro;
+    width: 100%;
+    padding: 0 0 0 0;
+}
+
+.top_content{
+    grid-area: content;
+    overflow-x: auto;
+    width: 80%;
+}
+.top_content h1{
+    width: max-content;
+    font-size: 18px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    font-weight: 400;
+    /*padding: 7px 10px;*/
+    white-space: nowrap;
+}
+
+#header{
+    width: 100%;       
+    background: #333;
+    color: #fff;
+    top: 0;
+    height: 7%;
+}
+.hcontent a {
+    /*float: left;*/
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+
+}
+.mlogo img{
+    width: 10%;
+    border-radius: 1%;
+}
+.buttons{
+    background-color: blue;
+    float: right;
+    font-size: 1em;
+}
+
+.buttons a:hover {
+    background-color: red;
+    color: black;
+  }
+
+@media screen and (max-width: 500px) {
+    .header_content a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-button {
+      float: none;
+    }
+  }
+
+/*inicio barra horizontal*/
+/* Style the navigation bar */
+.navbar {
+    width: 60%;
+    background-color: gainsboro;
+    overflow: auto;
+    /*float: inherit;*/
+    padding-left: 20%;
+      padding-right: 20%;
+    position: absolute;
+      align-content: center;
+      display: inline-block;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #4CAF50;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
