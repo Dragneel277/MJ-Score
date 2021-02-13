@@ -2,6 +2,8 @@
 body,html {
     margin: 0;
     height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden ;
     }
 #m_header{
     width: 100%;
@@ -15,7 +17,7 @@ body,html {
 }
 #space_l,#space_r{
     background-color: #e7e6e1;
-    width: 15%;
+    width: 10%;
     height: 100%;
 }
 
@@ -31,6 +33,9 @@ body,html {
     width: 100%;
     background-color: hotpink;
 
+}
+#pub{
+  width: 20%;
 }
 /*cabecalho*/
 .top{
@@ -158,7 +163,7 @@ img{
     position: fixed;
     z-index: 1;
     top: 15%;
-    left: 9%;
+    left: 6%;
     background:transparent;
     overflow-x: hidden;
     padding: 8px 0;
@@ -188,7 +193,7 @@ img{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-
+/*fim menu esquerdo*/
   .icon {
     display: inline-block;
     width: 1.5em;
