@@ -16,7 +16,7 @@
             </div>
             <div id="header">
                 <div class="hcontent">
-                    <a class="mlogo"><img src="IMG/MJS.png">    </a>
+                    <a  href="index.html" class="mlogo"><img src="IMG/MJS.png">    </a>
 
                     <div class="buttons">
                         <div class="searchBox">
@@ -29,8 +29,8 @@
                             </button>
                         </div>
                             <a href="#"><i class="fas fa-wrench"></i> definiçoes</a>
-                            <a href="#"><i class="fas fa-sign-in-alt"></i>  login</a>
-                            <a href="#"><i class="fas fa-registered"></i>  registrar</a>
+                            <a href="#" onclick="open_win()"><i class="fas fa-sign-in-alt"></i>  login</a>
+                            <a href="#" onclick="open_win()"><i class="fas fa-registered"></i>  registrar</a>
                     </div>
                 </div>
                 <div class="navbar">
@@ -72,18 +72,25 @@
             
                 
                         <div class="team1">
-                            <label for=""><img alt="" class="icon" src="IMG/027-schalke-04.svg" /><span class="team-text">Schalke<span class="second_text">04</span>
+                            <label for=""><img alt="" class="icon" src="IMG/Schalke.svg" /><span class="team-text">Schalke<span class="second_text">04</span>
                             </span></label>
                         </div>
-                        <div class="score">final</div>
+                        <span class="goal1">
+                            2
+                        </span>
+                        <div class="score" style="background-color:red;color:white">Em direto</div>
+
+                        <span class="goal2">
+                            0
+                        </span>
                         <div class="team2">
-                            <label for=""><img alt="" class="icon" src="IMG/021-nice.svg" /><span class="team-text">OGC <span class="second_text">Nice</span>
+                            <label for=""><img alt="" class="icon" src="IMG/Nice.svg" /><span class="team-text">OGC <span class="second_text">Nice</span>
                             </span></label>
                         </div>
             
                         <div class="info">
                             <span>Info sobre o jogo</span>
-                            <a href="#" onclick="changeTeam(0)"><svg class="icon icon-right-direction"><use xlink:href="#icon-right-direction"></use></svg></a>
+                            <a href="" onclick="open_info('Schalke','Nice')" onclick="changeTeam(0)"><svg class="icon icon-right-direction"><use xlink:href="#icon-right-direction"></use></svg></a>
                         </div>
 
                     </div>
@@ -91,18 +98,24 @@
             
                 
                         <div class="team1">
-                            <label for=""><img alt="" class="icon" src="IMG/016-leipzig.svg" /><span class="team-text"><span class="second_text">leipzig</span>
+                            <label for=""><img alt="" class="icon" src="IMG/Leipzig.svg" /><span class="team-text"><span class="second_text">leipzig</span>
                             </span></label>
                         </div>
+                        <span class="goal1">
+                            2
+                        </span>
                         <div class="score">final</div>
+                        <span class="goal1">
+                            2
+                        </span>
                         <div class="team2">
-                            <label for=""><svg class="icon icon-barcelona"><use xlink:href="#icon-barcelona"></use></svg><span class="team-text">F.C <span class="second_text">Barcelona</span>
+                            <label for=""><img alt="" class="icon" src="IMG/Barcelona.svg" /><span class="team-text">F.C <span class="second_text">Barcelona</span>
                             </span></label>
                         </div>
             
                         <div class="info">
                             <span>Info sobre o jogo</span>
-                            <a href="index.html?F.C Barcelona;Bayern Leverkusen" onclick="changeTeam(1)"><svg class="icon icon-right-direction"><use xlink:href="#icon-right-direction"></use></svg></a>
+                            <a href="" onclick="open_info('Leipzig','Barcelona')" ><svg class="icon icon-right-direction"><use xlink:href="#icon-right-direction"></use></svg></a>
                         </div>
    
                     </div>
@@ -110,18 +123,24 @@
             
                 
                         <div class="team1">
-                            <label for=""><img alt="" class="icon" src="IMG/025-juventus.svg" /><span class="team-text"><span class="second_text">Juventus</span>
+                            <label for=""><img alt="" class="icon" src="IMG/Juventus.svg" /><span class="team-text"><span class="second_text">Juventus</span>
                             </span></label>
                         </div>
+                        <span class="goal1">
+                            2
+                        </span>
                         <div class="score">final</div>
+                        <span class="goal1">
+                            2
+                        </span>
                         <div class="team2">
-                            <label for=""><img alt="" class="icon" src="IMG/019-monaco.svg" /><span class="team-text"><span class="second_text">Monaco</span>
+                            <label for=""><img alt="" class="icon" src="IMG/Monaco.svg" /><span class="team-text"><span class="second_text">Monaco</span>
                             </span></label>
                         </div>
             
                         <div class="info">
                             <span>Info sobre o jogo</span>
-                            <a href="index.html?F.C Barcelona;Bayern Leverkusen" onclick="changeTeam(1)"><svg class="icon icon-right-direction"><use xlink:href="#icon-right-direction"></use></svg></a>
+                            <a href="" onclick="open_info('Juventus','Monaco')" onclick="changeTeam(1)"><svg class="icon icon-right-direction"><use xlink:href="#icon-right-direction"></use></svg></a>
                         </div>
    
                     </div>
@@ -129,18 +148,24 @@
             
                 
                         <div class="team1">
-                            <label for=""><img alt="" class="icon" src="IMG/011-tottenham-hotspur.svg" /><span class="team-text">Tottenham <span class="second_text">hotspur</span>
+                            <label for=""><img alt="" class="icon" src="IMG/Tottenham.svg" /><span class="team-text">Tottenham <span class="second_text">hotspur</span>
                             </span></label>
                         </div>
+                        <span class="goal1">
+                            2
+                        </span>
                         <div class="score">final</div>
+                        <span class="goal1">
+                            2
+                        </span>
                         <div class="team2">
-                            <label for=""><img alt="" class="icon" src="IMG/012-lazio.svg" /><span class="team-text">F.C <span class="second_text">lazio</span>
+                            <label for=""><img alt="" class="icon" src="IMG/Lazio.svg" /><span class="team-text">F.C <span class="second_text">lazio</span>
                             </span></label>
                         </div>
             
                         <div class="info">
                             <span>Info sobre o jogo</span>
-                            <a href="index.html?F.C Barcelona;Bayern Leverkusen" onclick="changeTeam(1)"><svg class="icon icon-right-direction"><use xlink:href="#icon-right-direction"></use></svg></a>
+                            <a href="" onclick="open_info('Tottenham','Lazio')" onclick="changeTeam(1)"><svg class="icon icon-right-direction"><use xlink:href="#icon-right-direction"></use></svg></a>
                         </div>
    
                     </div>
@@ -148,18 +173,24 @@
             
                 
                         <div class="team1">
-                            <label for=""><img alt="" class="icon" src="IMG/005-bayern-leverkusen.svg" /><span class="team-text">Bayern <span class="second_text">Leverkusen</span>
+                            <label for=""><img alt="" class="icon" src="IMG/B.Leverkusen.svg" /><span class="team-text">Bayern <span class="second_text">Leverkusen</span>
                             </span></label>
                         </div>
-                        <div class="score">final</div>
+                        <span class="goal1">
+                            2
+                        </span>
+                        <div class="score" style="font-weight:bold">21:45</div>
+                        <span class="goal1">
+                            2
+                        </span>
                         <div class="team2">
-                            <label for=""><img alt="" class="icon" src="IMG/009-valencia.svg" /><span class="team-text">F.C <span class="second_text">Barcelona</span>
+                            <label for=""><img alt="" class="icon" src="IMG/Valencia.svg" /><span class="team-text">F.C <span class="second_text">Valencia</span>
                             </span></label>
                         </div>
             
                         <div class="info">
                             <span>Info sobre o jogo</span>
-                            <a href="index.html?F.C Barcelona;Bayern Leverkusen" onclick="changeTeam(1)"><svg class="icon icon-right-direction"><use xlink:href="#icon-right-direction"></use></svg></a>
+                            <a href="" onclick="open_info('B.Leverkusen','Valencia')" onclick="changeTeam(1)"><svg class="icon icon-right-direction"><use xlink:href="#icon-right-direction"></use></svg></a>
                         </div>
    
                     </div>
@@ -167,18 +198,24 @@
             
                 
                         <div class="team1">
-                            <label for=""><img alt="" class="icon" src="IMG/028-nantes.svg" /><span class="team-text"><span class="second_text">Nantes</span>
+                            <label for=""><img alt="" class="icon" src="IMG/Nantes.svg" /><span class="team-text"><span class="second_text">Nantes</span>
                             </span></label>
                         </div>
-                        <div class="score">final</div>
+                        <span class="goal1">
+                            2
+                        </span>
+                        <div class="score" style="background-color:#6da544">Intervalo</div>
+                        <span class="goal1">
+                            2
+                        </span>
                         <div class="team2">
-                            <label for=""><img alt="" class="icon" src="IMG/030-arsenal.svg" /><span class="team-text"><span class="second_text">Arsenal</span>
+                            <label for=""><img alt="" class="icon" src="IMG/Arsenal.svg" /><span class="team-text"><span class="second_text">Arsenal</span>
                             </span></label>
                         </div>
             
                         <div class="info">
                             <span>Info sobre o jogo</span>
-                            <a href="#" onclick="changeTeam(0)"><svg class="icon icon-right-direction"><use xlink:href="#icon-right-direction"></use></svg></a>
+                            <a href="" onclick="open_info('Nantes','Arsenal')"><svg class="icon icon-right-direction"><use xlink:href="#icon-right-direction"></use></svg></a>
                         </div>
 
                     </div>
@@ -330,6 +367,18 @@
                             <path fill="#ffe15a" style="fill: var(--color8, #ffe15a)" d="M12.6 8.714l-0.221 0.663-0.699 0.005c-0.091 0.001-0.128 0.116-0.055 0.17l0.563 0.415-0.211 0.667c-0.027 0.086 0.071 0.158 0.145 0.105l0.569-0.407 0.569 0.407c0.074 0.053 0.172-0.019 0.145-0.105l-0.211-0.667 0.563-0.415c0.073-0.054 0.035-0.169-0.055-0.17l-0.699-0.005-0.221-0.663c-0.029-0.086-0.15-0.086-0.179 0z"></path>
                             <path fill="#ffe15a" style="fill: var(--color8, #ffe15a)" d="M19.721 21.047l-0.221 0.663-0.699 0.005c-0.091 0.001-0.128 0.116-0.055 0.17l0.563 0.415-0.211 0.667c-0.027 0.086 0.071 0.158 0.145 0.105l0.569-0.407 0.569 0.407c0.074 0.053 0.172-0.019 0.145-0.105l-0.211-0.667 0.563-0.415c0.073-0.054 0.035-0.169-0.055-0.17l-0.699-0.005-0.221-0.663c-0.029-0.086-0.15-0.086-0.179 0z"></path>
                             </symbol></svg>
-                        </div>
+        </div>
+
+
+
+        <script>
+
+function open_win(){
+        window.open("index_login.html","","width=500,height=500");
+    }
+function open_info(team1,team2){
+    window.open("info.html?"+team1+";"+team2,"","width=662, height=817");
+}
+        </script>
     </body>
 </html>

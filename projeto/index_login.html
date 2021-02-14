@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_login.css">
+    <title>Document</title>
+</head>
+
+
+    <body class="align">
+      <div class="tab">
+        <button class="tablinks" onclick="openlog(event, 'login')" id="defaultOpen">login</button>
+        <button class="tablinks" onclick="openlog(event, 'register')">Registrar</button>
+       </div>
+      <div id="login" class="tabcontent">
+        <div class="grid">
+      
+          <form action="" method="POST" class="form login">
+      
+            <div class="form__field">
+              <label for="login__username"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use></svg><span class="hidden">Username</span></label>
+              <input id="login__username" type="text" name="username" class="form__input" placeholder="Username" required>
+            </div>
+      
+            <div class="form__field">
+              <label for="login__password"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lock"></use></svg><span class="hidden">Password</span></label>
+              <input id="login__password" type="password" name="password" class="form__input" placeholder="Password" required>
+            </div>
+      
+            <div class="form__field">
+              <input type="submit" value="Sign In">
+            </div>
+      
+          </form>
+      
+          
+        </div>
+      
+        <svg xmlns="http://www.w3.org/2000/svg" class="icons"><symbol id="arrow-right" viewBox="0 0 1792 1792"><path d="M1600 960q0 54-37 91l-651 651q-39 37-91 37-51 0-90-37l-75-75q-38-38-38-91t38-91l293-293H245q-52 0-84.5-37.5T128 1024V896q0-53 32.5-90.5T245 768h704L656 474q-38-36-38-90t38-90l75-75q38-38 90-38 53 0 91 38l651 651q37 35 37 90z"/></symbol><symbol id="lock" viewBox="0 0 1792 1792"><path d="M640 768h512V576q0-106-75-181t-181-75-181 75-75 181v192zm832 96v576q0 40-28 68t-68 28H416q-40 0-68-28t-28-68V864q0-40 28-68t68-28h32V576q0-184 132-316t316-132 316 132 132 316v192h32q40 0 68 28t28 68z"/></symbol><symbol id="user" viewBox="0 0 1792 1792"><path d="M1600 1405q0 120-73 189.5t-194 69.5H459q-121 0-194-69.5T192 1405q0-53 3.5-103.5t14-109T236 1084t43-97.5 62-81 85.5-53.5T538 832q9 0 42 21.5t74.5 48 108 48T896 971t133.5-21.5 108-48 74.5-48 42-21.5q61 0 111.5 20t85.5 53.5 62 81 43 97.5 26.5 108.5 14 109 3.5 103.5zm-320-893q0 159-112.5 271.5T896 896 624.5 783.5 512 512t112.5-271.5T896 128t271.5 112.5T1280 512z"/></symbol></svg>
+      
+      </div>
+      <div id="register" class="tabcontent">
+        <div class="grid">
+      
+          <form action="https://httpbin.org/post" method="POST" class="form login">
+      
+            <div class="form__field">
+              <label for="login__username"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use></svg><span class="hidden">first name</span></label>
+              <input id="login__username" type="text" name="username" class="form__input" placeholder="Nome" required>
+            </div>
+
+            <div class="form__field">
+              <label for="login__username"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use></svg><span class="hidden">last name</span></label>
+              <input id="login__username" type="text" name="username" class="form__input" placeholder="Apelido" required>
+            </div>
+
+            <div class="form__field">
+              <label for="email"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></label>
+              <input id="email" type="text" name="email" class="form__input" placeholder="email@example.com" required>
+            </div>
+      
+            <div class="form__field">
+              <label for="login__password"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lock"></use></svg><span class="hidden">Password</span></label>
+              <input id="login__password" type="password" name="password" class="form__input" placeholder="Palavra-passe" required>
+            </div>
+
+            <div class="form__field">
+              <label for="login__password"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lock"></use></svg><span class="hidden">Password</span></label>
+              <input id="login__password" type="password" name="password" class="form__input" placeholder="Palavra-passe" required>
+            </div>
+
+           
+
+           
+            
+        
+      
+            <div class="form__field">
+              <input type="submit" value="Registrar">
+            </div>
+      
+          </form>
+      
+         
+      
+        </div>
+      
+        <svg xmlns="http://www.w3.org/2000/svg" class="icons"><symbol id="arrow-right" viewBox="0 0 1792 1792"><path d="M1600 960q0 54-37 91l-651 651q-39 37-91 37-51 0-90-37l-75-75q-38-38-38-91t38-91l293-293H245q-52 0-84.5-37.5T128 1024V896q0-53 32.5-90.5T245 768h704L656 474q-38-36-38-90t38-90l75-75q38-38 90-38 53 0 91 38l651 651q37 35 37 90z"/></symbol><symbol id="lock" viewBox="0 0 1792 1792"><path d="M640 768h512V576q0-106-75-181t-181-75-181 75-75 181v192zm832 96v576q0 40-28 68t-68 28H416q-40 0-68-28t-28-68V864q0-40 28-68t68-28h32V576q0-184 132-316t316-132 316 132 132 316v192h32q40 0 68 28t28 68z "/></symbol><symbol id="user" viewBox="0 0 1792 1792"><path d="M1600 1405q0 120-73 189.5t-194 69.5H459q-121 0-194-69.5T192 1405q0-53 3.5-103.5t14-109T236 1084t43-97.5 62-81 85.5-53.5T538 832q9 0 42 21.5t74.5 48 108 48T896 971t133.5-21.5 108-48 74.5-48 42-21.5q61 0 111.5 20t85.5 53.5 62 81 43 97.5 26.5 108.5 14 109 3.5 103.5zm-320-893q0 159-112.5 271.5T896 896 624.5 783.5 512 512t112.5-271.5T896 128t271.5 112.5T1280 512z"/></symbol>
+          <symbol id="icon-envelope" viewBox="0 0 48 48"><path d="M0 38c0 2.21 1.79 4 4 4h40c2.21 0 4-1.79 4-4l-0-27c0-2.21-1.79-4-4-4l-40 0c-2.21 0-4 1.79-4 4v27zM14.72 24.53l-9.15-9.21c-0.759-0.76-0.759-1.99 0-2.75 0.761-0.76 1.991-0.76 2.75 0l14.6 14.619c0.59 0.58 1.561 0.58 2.141 0l14.619-14.619c0.76-0.76 1.99-0.76 2.75 0s0.76 1.99 0 2.75l-9.16 9.21 9.16 9.149c0.76 0.76 0.76 1.99 0 2.75s-1.99 0.76-2.75 0l-9.15-9.14c0 0-2.859 2.91-3.379 3.43-0.811 0.791-1.931 1.281-3.151 1.281-1.24 0-2.36-0.5-3.17-1.311-0.53-0.52-3.37-3.399-3.37-3.399l-9.141 9.14c-0.759 0.76-1.989 0.76-2.75 0-0.759-0.76-0.759-1.99 0-2.75l9.151-9.15z"></path></symbol>
+        </svg>
+       
+      
+      
+      
+      <script>
+        function openlog(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+      </script>
+</body>
+</html>
