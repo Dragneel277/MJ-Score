@@ -14,6 +14,7 @@ body,html {
     width: 100%;
     height: 100%;
     padding-top: 2.3%;
+    overflow-y: auto;
 }
 #space_l,#space_r{
     background-color: #e7e6e1;
@@ -31,11 +32,14 @@ body,html {
 }
 #m_main{
     width: 100%;
-    background-color: hotpink;
+    background-color: #e7e6e1;
+    padding-left: 1%;
+    padding-top: .5%;
 
 }
 #pub{
   width: 20%;
+  height: 85.2%;
 }
 /*cabecalho*/
 .top{
@@ -58,11 +62,12 @@ body,html {
     padding: 0%;
 }
 /*fim top content*/
-
+/*logo + icons*/
 #header{
     width: 100%;       
     top: 0;
-    height: 7%;
+    background-color: #393e46;
+
 }
 .hcontent{
     background-color: #393e46;
@@ -79,7 +84,6 @@ body,html {
 
 }
 .mlogo img{
-    border-radius: 1%;
     width: 160px;
     padding-left: 18.5%;
 
@@ -101,6 +105,94 @@ img{
     color: #393e46;
   }
 
+/*search*/
+  .searchBox {
+    position:fixed;
+    left: 58%;
+    transform:  translate(-100%,50%);
+    background: #2f3640;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: #a3f7bf;
+  color : #222831;
+}
+
+.searchButton {
+    color:#a3f7bf;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: #A3F7BF;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+/*searc end*/
+
+@media screen and (max-width: 620px) {
+  
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+}
+@media screen and (max-width: 1440px) {
+  .searchBox {
+    left: 57%;
+}}
+@media screen and (max-width: 1340px) {
+  .searchBox {
+    left: 55%;
+}}
+
+@media screen and (max-width: 1240px) {
+  .searchBox {
+    left: 53%;
+}}
+@media screen and (max-width: 1140px) {
+  .searchBox {
+    left: 51%;
+}}
+@media screen and (max-width: 1040px) {
+  .searchBox {
+    left: 49%;
+}}
+@media screen and (max-width: 940px) {
+  .searchBox {
+    left: 47%;
+}}
+@media screen and (max-width: 840px) {
+  .searchBox {
+    left: 45%;
+}}
+@media screen and (max-width: 740px) {
+  .searchBox {
+    left: 43%;
+}}
 @media screen and (max-width: 500px) {
     .hcontent a {
       float: none;
@@ -122,9 +214,10 @@ img{
     overflow: auto;
     padding-left: 19%;
     padding-right: 20%;
-    position: absolute;
+    position: relative;
     align-content: center;
     display: inline-block;
+    
   }
   
   /* Navbar links */
@@ -183,7 +276,7 @@ img{
 
   }
   
-  .main {
+  .main{
     margin-left: 140px; /* Same width as the sidebar + left position in px */
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
@@ -194,12 +287,168 @@ img{
     .sidenav a {font-size: 18px;}
   }
 /*fim menu esquerdo*/
-  .icon {
-    display: inline-block;
-    width: 1.5em;
-    height:1.5em;
-    stroke-width: 0;
-    vertical-align: middle;
-    stroke: currentColor;
-    fill: currentColor;
+.icon_menu {
+  display: inline-block;
+  width: 1.5em;
+  height:1.5em;
+  stroke-width: 0;
+  vertical-align: middle;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/*conteudo principa*/
+
+
+.schedule{
+  width: 96%;
+  border-radius: 10px;
+  padding:13px;
+}
+.date{
+  float: right;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+.date input[type=date]{
+  border-radius:  8px;
+  background-color:#393E46 ;
+  color: #a3f7bf;
+}
+
+.titledate{
+  margin-top:10px;
+  font-size:16px;
+  margin-left: 0px;
+  padding:10px;
+  border-bottom:1px solid black;
+  color: #A3F7BF;
+  font-family: 'Signika', sans-serif;
+  background-color: #222831;
+}
+
+.content_main{
+  display: inline-flex;
+  width: 100%;
+  min-height: fit-content;
+  margin-top:1%;
+  margin-bottom:2%;
+  border-bottom: 1px solid;
   }
+
+
+.team1{
+  position:relative;
+  margin-left: 10%;
+
+  width:10%; /* or whatever width you want. */
+  max-width: 10%; /* or whatever width you want. */
+  display:inline;
+ }
+
+.score{
+  margin-left: 10%;
+
+  width:15%;
+  text-align:center;
+  padding:5px;
+  border: 1px solid;
+  border-radius: 15px;
+  height:fit-content;
+  background-color: rgb(19, 130, 233);
+  color:white;
+  
+ }
+.team2{
+  position: relative;
+  margin-left: 10%;
+
+  width:10%; /* or whatever width you want. */
+  max-width: 10%; /* or whatever width you want. */
+  display: inline-block;
+
+
+ }
+
+ .icon{
+  display: inline-block;
+  width: 2.5em;
+  height: 2.5em;
+  fill: currentColor;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  
+
+}
+
+.icon-right-direction{
+    position: absolute;
+    width:1.5em;
+    color:red;
+    margin-top:5%;
+    right:1%;
+}
+
+.info{
+  position:relative;
+  margin-left: 8%;
+  text-transform:uppercase;
+
+}
+.team_text{
+  margin-top:0;
+  font-size:0.5em;  
+  
+}
+.second_text{
+  margin-top:0;
+  font-size:1.2em; 
+  font-weight:bold;  
+}
+
+@media only screen and (max-width: 600px) {
+  .icon {
+   display: inline-block;
+   width: 1em;
+   height: 1em;
+   stroke-width: 0;
+   stroke: currentColor;
+   fill: currentColor;
+
+
+ }
+
+.team_text{
+margin-top:0;
+font-size:0.2em;  
+
+}
+ .second_text{
+  margin-top:0;
+  font-size:0.8em; 
+  font-weight:bold;  
+}
+
+.info{
+  position:relative;
+  margin-left: 8%;
+  text-transform:uppercase;
+  font-size:10px;
+
+}
+
+.score{
+  margin-left: 10%;
+  width:10%;
+  text-align:center;
+  padding:5px;
+  border: 1px solid;
+  border-radius: 15px;
+  height:fit-content;
+  background-color: rgb(19, 130, 233);
+  color:white;
+  font-size:10px;
+  
+ }
+}
